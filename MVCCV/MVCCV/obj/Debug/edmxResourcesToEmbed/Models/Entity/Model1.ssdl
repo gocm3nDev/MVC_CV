@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CVdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TBL_ABOUT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Surname" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar" MaxLength="100" />
+    <Property Name="Mail" Type="varchar" MaxLength="50" />
+    <Property Name="Identification" Type="varchar(max)" />
+    <Property Name="Image" Type="varchar" MaxLength="100" />
+    <Property Name="Phone" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="TBL_ADMIN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="20" />
+    <Property Name="Passwd" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="TBL_CERT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sertifika" Type="varchar" MaxLength="250" />
+    <Property Name="Date" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="TBL_COM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="atWho" Type="varchar" MaxLength="100" />
+    <Property Name="Mail" Type="varchar" MaxLength="50" />
+    <Property Name="Subject" Type="varchar" MaxLength="100" />
+    <Property Name="Message" Type="varchar" MaxLength="1000" />
+    <Property Name="Date" Type="date" />
+  </EntityType>
+  <EntityType Name="TBL_EDU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Header" Type="varchar" MaxLength="100" />
+    <Property Name="LowerHeader" Type="varchar" MaxLength="100" />
+    <Property Name="Role" Type="varchar" MaxLength="100" />
+    <Property Name="GPA" Type="varchar" MaxLength="10" />
+    <Property Name="Date" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TBL_EXP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Header" Type="varchar" MaxLength="100" />
+    <Property Name="LowerHeader" Type="varchar" MaxLength="100" />
+    <Property Name="Identification" Type="varchar(max)" />
+    <Property Name="Date" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TBL_HOBIES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description1" Type="varchar" MaxLength="500" />
+    <Property Name="Description2" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="TBL_SKILLS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Skills" Type="varchar" MaxLength="50" />
+    <Property Name="Ratio" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="TBL_SOCIAL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ad" Type="varchar" MaxLength="30" />
+    <Property Name="Link" Type="varchar" MaxLength="50" />
+    <Property Name="Icon" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityContainer Name="CVdbModelStoreContainer">
+    <EntitySet Name="TBL_ABOUT" EntityType="Self.TBL_ABOUT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_ADMIN" EntityType="Self.TBL_ADMIN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_CERT" EntityType="Self.TBL_CERT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_COM" EntityType="Self.TBL_COM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_EDU" EntityType="Self.TBL_EDU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_EXP" EntityType="Self.TBL_EXP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_HOBIES" EntityType="Self.TBL_HOBIES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_SKILLS" EntityType="Self.TBL_SKILLS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_SOCIAL" EntityType="Self.TBL_SOCIAL" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

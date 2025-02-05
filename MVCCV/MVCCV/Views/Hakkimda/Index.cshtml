@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Hakkımda Menüsü</h2>
+
+<form method="post">
+    @foreach (var item in Model)
+    {
+    <input type="text" name="Name" placeholder="Adınız" class="form-control" value="@item.Name"/>
+    <br />
+    <input type="text" name="Surname" placeholder="Soy Adınız" class="form-control" value="@item.Surname"/>
+    <br />
+    <input type="text" name="Address" placeholder="Adresiniz" class="form-control" value="@item.Address"/>
+    <br />
+    <input type="text" name="Mail" placeholder="E-Posta Adresiniz" class="form-control" value="@item.Mail"/>
+    <br />
+    <input type="text" name="Identification" placeholder="Kendinizi Tanıtın" class="form-control" value="@item.Identification"/>
+    <br />
+    <input type="text" name="Phone" placeholder="Telefon Numaranız" class="form-control" value="@item.Phone"/>
+    <br />
+    <br />
+    }
+    <button class="btn btn-success">
+        <i class="fas fa-check"></i>
+    Güncelle
+    </button>
+</form>
+

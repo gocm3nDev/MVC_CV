@@ -1,0 +1,24 @@
+﻿@model MVCCV.Models.Entity.TBL_ADMIN
+
+@{
+    ViewBag.Title = "AdminDuzenle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Admin Düzenleme Sayfası</h2>
+<br />
+    <form method="post">
+
+        @Html.Label("Admin ID")
+        @Html.TextBoxFor(x => x.ID, new { @class = "form-control", @readonly = "readonly" })
+        <br />
+        @Html.Label("Admin Adı")
+        @Html.TextBoxFor(x => x.Username, new { @class = "form-control" })
+        <br />
+        @Html.Label("Admin Şifresi")
+        @Html.TextBoxFor(x => x.Passwd, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-info">Admin Bilgilerini Güncelle</button>
+
+    </form>

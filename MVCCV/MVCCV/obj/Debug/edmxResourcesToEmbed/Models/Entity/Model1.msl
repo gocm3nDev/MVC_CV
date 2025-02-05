@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CVdbModelStoreContainer" CdmEntityContainer="CVdbEntities">
+    <EntitySetMapping Name="TBL_ABOUT">
+      <EntityTypeMapping TypeName="CVdbModel.TBL_ABOUT">
+        <MappingFragment StoreEntitySet="TBL_ABOUT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Identification" ColumnName="Identification" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_ADMIN">
+      <EntityTypeMapping TypeName="CVdbModel.TBL_ADMIN">
+        <MappingFragment StoreEntitySet="TBL_ADMIN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Passwd" ColumnName="Passwd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_CERT">
+      <EntityTypeMapping TypeName="CVdbModel.TBL_CERT">
+        <MappingFragment StoreEntitySet="TBL_CERT">
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Sertifika" ColumnName="Sertifika" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_COM">
+      <EntityTypeMapping TypeName="CVdbModel.TBL_COM">
+        <MappingFragment StoreEntitySet="TBL_COM">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="atWho" ColumnName="atWho" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_EDU">
+      <EntityTypeMapping TypeName="CVdbModel.TBL_EDU">
+        <MappingFragment StoreEntitySet="TBL_EDU">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="LowerHeader" ColumnName="LowerHeader" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="GPA" ColumnName="GPA" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_EXP">
+      <EntityTypeMapping TypeName="CVdbModel.TBL_EXP">
+        <MappingFragment StoreEntitySet="TBL_EXP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="LowerHeader" ColumnName="LowerHeader" />
+          <ScalarProperty Name="Identification" ColumnName="Identification" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_HOBIES">
+      <EntityTypeMapping TypeName="CVdbModel.TBL_HOBIES">
+        <MappingFragment StoreEntitySet="TBL_HOBIES">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description1" ColumnName="Description1" />
+          <ScalarProperty Name="Description2" ColumnName="Description2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_SKILLS">
+      <EntityTypeMapping TypeName="CVdbModel.TBL_SKILLS">
+        <MappingFragment StoreEntitySet="TBL_SKILLS">
+          <ScalarProperty Name="Ratio" ColumnName="Ratio" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Skills" ColumnName="Skills" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_SOCIAL">
+      <EntityTypeMapping TypeName="CVdbModel.TBL_SOCIAL">
+        <MappingFragment StoreEntitySet="TBL_SOCIAL">
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

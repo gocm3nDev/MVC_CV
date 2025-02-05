@@ -1,0 +1,48 @@
+﻿@using MVCCV.Models.Entity
+@model List<TBL_EDU>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Eğitim Listesi</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Başlık</th>
+        <th>Alt Başlık</th>
+        <th>Bölüm</th>
+        <th>GNO</th>
+        <th>Tarih</th>
+        <th>Sil</th>
+        <th>Düzenle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.ID</th>
+            <th>@item.Header</th>
+            <th>@item.LowerHeader</th>
+            <th>@item.Role</th>
+            <th>@item.GPA</th>
+            <th>@item.Date</th>
+            <th><a href="/Egitim/EgitimSil/@item.ID" class="btn btn-danger">
+                    <i class="fas fa-trash"></i>
+                Sil
+                </a></th>
+            <th><a href="/Egitim/EgitimDuzenle/@item.ID" class="btn btn-primary">
+                    <i class="fas fa-pen"></i>
+                   Düzenle
+                   </a></th>
+        </tr>
+
+    }
+</table>
+
+<a href="/Egitim/EgitimEkle/" class="btn btn-success">
+    <i class="fas fa-folder"></i>
+    Yeni Eğitim Ekle
+</a>

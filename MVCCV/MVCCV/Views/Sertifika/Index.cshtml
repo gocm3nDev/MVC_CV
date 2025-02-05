@@ -1,0 +1,59 @@
+﻿@using MVCCV.Models.Entity
+@model List<TBL_CERT>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html>
+<body class="hold-transition sidebar-mini">
+    <br />
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- /.col -->
+                <div class="col-md-12">
+                    <div class="card"><!-- /.card-header -->
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="timeline">
+                                    <!-- The timeline -->
+                                    <div class="timeline timeline-inverse">
+                                        <!-- timeline time label -->
+                                        @foreach (var item in Model) {
+                                        <div class="time-label">
+                                            <span class="bg-success">
+                                                <a href="/Sertifika/SertifikaGuncelle/@item.ID">@item.Date</a>
+                                            </span>
+                                        </div>
+                                        <!-- /.timeline-label -->
+                                        <!-- timeline item -->
+                                        <div>
+                                            <div class="timeline-item">
+                                                <h3 class="timeline-header">@item.Sertifika</h3>
+                                            </div>
+                                        </div>
+                                        }
+                                      </div>
+                                    <a href="/Sertifika/YeniSertifika/" class="btn btn-info">
+                                        <i class="fas fa-folder"></i>
+                                    Yeni Sertifika
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.nav-tabs-custom -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>
+</body>
+</html>
+

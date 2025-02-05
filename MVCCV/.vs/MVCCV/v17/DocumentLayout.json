@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Efe\\Desktop\\MVC Projects\\MVCCV\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC7976A9-B80B-455F-B3FA-A680574E01FC}|MVCCV\\MVCCV.csproj|c:\\users\\efe\\desktop\\mvc projects\\mvccv\\mvccv\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC7976A9-B80B-455F-B3FA-A680574E01FC}|MVCCV\\MVCCV.csproj|solutionrelative:mvccv\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC7976A9-B80B-455F-B3FA-A680574E01FC}|MVCCV\\MVCCV.csproj|C:\\Users\\Efe\\Desktop\\MVC Projects\\MVCCV\\mvccv\\views\\admin\\adminduzenle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC7976A9-B80B-455F-B3FA-A680574E01FC}|MVCCV\\MVCCV.csproj|solutionrelative:mvccv\\views\\admin\\adminduzenle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC7976A9-B80B-455F-B3FA-A680574E01FC}|MVCCV\\MVCCV.csproj|C:\\Users\\Efe\\Desktop\\MVC Projects\\MVCCV\\mvccv\\controllers\\deneyimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC7976A9-B80B-455F-B3FA-A680574E01FC}|MVCCV\\MVCCV.csproj|solutionrelative:mvccv\\controllers\\deneyimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC7976A9-B80B-455F-B3FA-A680574E01FC}|MVCCV\\MVCCV.csproj|C:\\Users\\Efe\\Desktop\\MVC Projects\\MVCCV\\mvccv\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC7976A9-B80B-455F-B3FA-A680574E01FC}|MVCCV\\MVCCV.csproj|solutionrelative:mvccv\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminDuzenle.cshtml",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\MVC Projects\\MVCCV\\MVCCV\\Views\\Admin\\AdminDuzenle.cshtml",
+              "RelativeDocumentMoniker": "MVCCV\\Views\\Admin\\AdminDuzenle.cshtml",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\MVC Projects\\MVCCV\\MVCCV\\Views\\Admin\\AdminDuzenle.cshtml",
+              "RelativeToolTip": "MVCCV\\Views\\Admin\\AdminDuzenle.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-04T20:53:18.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeneyimController.cs",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\MVC Projects\\MVCCV\\MVCCV\\Controllers\\DeneyimController.cs",
+              "RelativeDocumentMoniker": "MVCCV\\Controllers\\DeneyimController.cs",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\MVC Projects\\MVCCV\\MVCCV\\Controllers\\DeneyimController.cs",
+              "RelativeToolTip": "MVCCV\\Controllers\\DeneyimController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwDQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T20:04:24.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\MVC Projects\\MVCCV\\MVCCV\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVCCV\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\MVC Projects\\MVCCV\\MVCCV\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "MVCCV\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-04T20:27:44.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Efe\\Desktop\\MVC Projects\\MVCCV\\MVCCV\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "MVCCV\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Efe\\Desktop\\MVC Projects\\MVCCV\\MVCCV\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "MVCCV\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwDAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T20:26:19.573Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

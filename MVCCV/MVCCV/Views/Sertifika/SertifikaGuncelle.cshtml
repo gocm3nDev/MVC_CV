@@ -1,0 +1,22 @@
+﻿@model MVCCV.Models.Entity.TBL_CERT
+
+@{
+    ViewBag.Title = "SertifikaGuncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Sertifika Bilgilerini Güncelleme Sayfası</h2>
+
+<form method="post">
+    @Html.AntiForgeryToken()
+    <input type="text" name="Sertifika" placeholder="Sertifikanızın adı" class="form-control" value="@Html.Raw(Model.Sertifika)" />
+    <br />
+    <input type="text" name="Date" placeholder="Sertifikayı aldığınız tarih (Örnek: Mayıs 2022)" class="form-control" value="@Html.Raw(Model.Date)" />
+    <br />
+    <button type="submit" class="btn btn-info">Güncelle</button>
+    <a href="/Sertifika/SertifikaSil/@Model.ID" class="btn btn-danger">
+        <i class="fas fa-trash"></i>
+        Sertifikayı Sil
+    </a>
+</form>
+

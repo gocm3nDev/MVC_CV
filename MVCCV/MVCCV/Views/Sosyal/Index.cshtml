@@ -1,0 +1,95 @@
+﻿@using MVCCV.Models.Entity
+@model List<TBL_SOCIAL>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <br />
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Sosyal Medya Hesaplarını Yönet</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <button data-toggle="modal" data-target="#Modal1" class="btn btn-primary">
+                                    <i class="fas fa-plus"></i>
+                                    Sosyal Medya Ekle
+                                </button>
+                                <br />
+                                <br />
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 10px">#</th>
+                                            <th>Sosyal Medya</th>
+                                            <th>Sil</th>
+                                            <th>Düzenle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model)
+                                        {
+                                            
+                                            <tr>
+                                                <td>@item.ID</td>
+                                                <td>@item.Ad</td>
+                                                <td>
+                                                    <a href="/Sosyal/SosyalSil/@item.ID" class="btn btn-danger">
+                                                        <i class="fas fa-trash"></i>
+                                                        Sil
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="/Sosyal/SosyalDuzenle/@item.ID" class="btn btn-info">
+                                                        <i class="fas fa-pen"></i>
+                                                        Düzenle
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+        <div class="modal" id="Modal1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Yeni Sosyal Medya Hesabı Ekle</h3>
+                    </div>
+                    <form action="/Sosyal/SosyalEkle/" method="post">
+                        <div class="modal-body">
+                            <label>Sosyal Medya Adı</label>
+                            <input type="text" name="Ad" class="form-control" />
+                            <label>Sosyal Medya Hesabının Linki</label>
+                            <input type="text" name="Link" class="form-control" />
+                            <label>Sosyal Medya İkonu</label>
+                            <input type="text" name="Icon" class="form-control" />
+                            <br />
+                            <button class="btn btn-warning">Ekle</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

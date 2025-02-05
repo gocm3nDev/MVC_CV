@@ -1,0 +1,27 @@
+﻿@model MVCCV.Models.Entity.TBL_EDU
+
+@{
+    ViewBag.Title = "EgitimEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Eğitim Ekle</h2>
+
+<form method="post">
+    <input type="text" class="form-control" name="Header" placeholder="Okulunuzun Adı" />
+    @Html.ValidationMessageFor(x => x.Header, "", new { @style = "color: red" })
+    <br />
+    <input type="text" class="form-control" name="LowerHeader" placeholder="Mezuniyet Dereceniz (Önlisans, Lisans vb.)" />
+    <br />
+    <input class="form-control" name="Role" placeholder="Bölümünüz (Bilgisayar Mühendisliği, Tıp)">
+    <br />
+    <input class="form-control" name="GPA" placeholder="Mezuniyet Not Ortalamanız">
+    @Html.ValidationMessageFor(x => x.GPA, "", new { @style = "color: red" })
+
+    <br />
+    <input type="text" class="form-control" name="Date" placeholder="Öğrenci olduğunuz tarih aralığınızı girin (Örnek: Mart 2019 - Mayıs 2021)" />
+    <br />
+    <button class="btn btn-info">Eğitimi Kaydet</button>
+</form>
+
+

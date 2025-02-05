@@ -1,0 +1,58 @@
+﻿@using MVCCV.Models.Entity
+@model List<TBL_COM>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<body class="hold-transition sidebar-mini">
+    <br />
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="timeline">
+                                    <!-- The timeline -->
+                                    <div class="timeline timeline-inverse">
+                                        <!-- timeline time label -->
+                                        @foreach (var item in Model)
+                                        {
+                                            <div class="time-label">
+                                                <span class="bg-danger">
+                                                    @(((DateTime)item.Date).ToString("dd-MMM-yyyy"))
+                                                </span>
+                                            </div>
+                                            <!-- /.timeline-label -->
+                                            <!-- timeline item -->
+                                            <div>
+                                                <i class="fas fa-comments bg-warning"></i>
+                                                <div class="timeline-item">
+                                                    <h3 class="timeline-header">@item.atWho, sana bir mesaj gönderdi. Gönderen E-Postası: <a href="mailto:@item.Mail">@item.Mail</a></h3>
+                                                    <h4 class="timeline-header">Konu: @item.Subject</h4>
+                                                    <div class="timeline-body">
+                                                        Mesaj: @item.Message
+                                                    </div>
+                                                    <div class="timeline-footer">
+                                                        <a href="#" class="btn btn-warning btn-sm">Mesaj</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+

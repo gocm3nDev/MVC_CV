@@ -1,0 +1,19 @@
+﻿@model MVCCV.Models.Entity.TBL_SKILLS
+
+@{
+    ViewBag.Title = "YetenekDuzenle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yetenek Güncelleme Sayfası</h2>
+
+<form method="post">
+    @Html.Label("Yetenek Adı")
+    @Html.TextBoxFor(x => x.Skills, new { @class = "form-control" })
+    <br />
+    @Html.Label("Yetenek Oranı")
+    @Html.TextBoxFor(x => x.Ratio, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Güncelle</button>
+</form>
+

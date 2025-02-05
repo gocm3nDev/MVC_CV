@@ -1,0 +1,22 @@
+﻿@model MVCCV.Models.Entity.TBL_EXP
+
+@{
+    ViewBag.Title = "DeneyimGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Deneyim Güncelleme Sayfası</h2>
+
+<form method="post">
+    <input type="text" class="form-control" name="Header" placeholder="Deneyiminizin adını girin" />
+    <br />
+    <input type="text" class="form-control" name="LowerHeader" placeholder="Deneyiminizdeki pozisyonunuzu girin" />
+    <br />
+    <textarea class="form-control" name="Identification" placeholder="Deneyiminizdeki işinizi açıklayın" rows="5"></textarea>
+    <br />
+    <input type="text" class="form-control" name="Date" placeholder="Çalışma tarih aralığınızı girin (Örnek: Mart 2019 - Mayıs 2021)" />
+    <br />
+    <button class="btn btn-info">Deneyimi Kaydet</button>
+</form>
+

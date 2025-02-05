@@ -1,0 +1,27 @@
+﻿@model MVCCV.Models.Entity.TBL_EDU
+
+@{
+    ViewBag.Title = "EgitimDuzenle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Eğitim Güncelleme Sayfası</h2>
+
+<form method="post">
+    @Html.Label("Okulun Adı")
+    @Html.TextBoxFor(x => x.Header, new { @class = "form-control" })
+    <br />
+    @Html.Label("Mezuniyet Derecesi")
+    @Html.TextBoxFor(x => x.LowerHeader, new { @class = "form-control" })
+    <br />
+    @Html.Label("Mezuniyet Bölümü")
+    @Html.TextBoxFor(x => x.Role, new { @class = "form-control" })
+    <br />
+    @Html.Label("GNO")
+    @Html.TextBoxFor(x => x.GPA, new { @class = "form-control" })
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Güncelle</button>
+</form>

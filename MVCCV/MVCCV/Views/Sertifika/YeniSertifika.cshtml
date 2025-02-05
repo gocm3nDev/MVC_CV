@@ -1,0 +1,20 @@
+﻿
+
+@{
+    ViewBag.Title = "YeniSertifika";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>YeniSertifika</h2>
+
+<form method="post">
+    @Html.AntiForgeryToken()
+    <input type="text" name="Sertifika" placeholder="Sertifikanızın adı" class="form-control" />
+    <br />
+    <input type="text" name="Date" placeholder="Sertifikayı aldığınız tarih (Örnek: Mayıs 2022)" class="form-control" />
+    <br />
+    <button class="btn btn-info">
+        <i class="fas fa-folder"></i>
+        Sertifikayı Kaydet
+    </button>
+</form>
